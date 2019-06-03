@@ -1,0 +1,143 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../img/bg4.jpg);
+    background-size: 100%;
+}
+.container{
+    width: 600px;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 0 4px 8px 0 rgba(87, 87, 87, 0.623), 0 6px 20px 0 rgba(180, 180, 180, 0.377);
+
+}
+video{
+    width: 100%;
+}
+.control_bar{
+    width: 100%;
+    height: 40px;
+    position: relative;
+    background-color: rgb(238, 238, 238);
+    /* padding: 5px 10px 0 10px; */
+}
+
+.play{
+    display: inline-block;
+    /* display: none; */
+    float: left;
+    width: 38px;
+    height: 35px;
+    margin-top: 3px;
+    background: url(../img/sprite.png);
+    cursor: pointer;
+
+}
+.pause{
+    display: none;
+    /* display: inline-block; */
+    float: left;
+
+    width: 38px;
+    height: 35px;
+    margin-top: 3px;
+    /* background: url(../img/sprite.png); */
+    background: url(../img/sprite.png) -38px 0;
+    cursor: pointer;
+}
+
+/* 进度条 */
+.progress{
+    display: inline-block;
+    /* width: 55%; */
+    width: 330px;
+    height: 10px;
+    /* position: absolute; */
+    float: left;
+
+    /* margin-top: 5px; */
+    border-radius: 5px;
+    /* top: 16px; */
+    margin-left: 5px;
+    margin-top: 15px;
+    /* left: 5px; */
+    background: rgb(85, 85, 85);
+    cursor: pointer;
+}
+.cur_progress{
+    width: 0;
+    height: 10px;
+    border-radius: 5px;
+    position: relative;
+    background:url(../img/play-bar.png) repeat-x;
+
+}
+.progress_sprite{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-image: url(../img/handle.png);
+    background-size: 100%;
+    position: absolute;
+    right: -5px;
+    top: -1px;
+}
+.time{
+    display: inline-block;
+    /* position: absolute; */
+    float: left;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+/* 声音 */
+.volume{
+    display: inline-block;
+    width: 10%;
+    height: 6px;
+    border-radius: 3px;
+    background-color: rgb(146, 146, 146);
+    float: left;
+    /* line-height: 40px; */
+    margin-top: 17px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.cur_volume{
+    width: 50%;
+    height: 100%;
+    border-radius: 3px;
+
+    background-color: rgb(0, 196, 33);
+    position: relative;
+}
+.volume_sprite{
+    position: absolute;
+    right: -3px;
+    top: -2px;
+    width: 10px;
+    height: 10px;
+    background: url(../img/volume.png);
+    background-size: 100%;
+}
+.fullScreen{
+    width: 38px;
+    height: 35px;
+    /* float: left; */
+    margin-top: 2px;
+    display: inline-block;
+    float: right;
+    background: url(../img/sprite.png) -155px 0;
+    cursor: pointer;
+}
+footer{
+    margin-top: 200px;
+
+    text-align: center;
+    color: rgb(226, 226, 226);
+    
+}
